@@ -42,7 +42,7 @@ La base de datos `Ventas_Tech_DB` contiene cuatro tablas:
 - Cada venta está asociada a un cliente mediante `ventas.id_cliente`.
 - Cada venta está asociada a un producto mediante `ventas.id_producto`.
 
-Las tablas usan claves primarias y foráneas para mantener la integridad referencial. El correo electrónico de los clientes también se define como único.
+Las tablas usan claves primarias y foráneas para mantener la integridad referencial. 
 
 ## Estructura del repositorio
 
@@ -72,7 +72,7 @@ Este script:
 
 Incluye consultas para:
 
-- Calcular facturación, cantidad de pedidos y promedio del precio unitario por mes.
+- Calcular facturación, cantidad de pedidos y ticket promedio por mes.
 - Obtener los cinco productos con mayor facturación y sus unidades vendidas.
 - Identificar clientes con más de un pedido y calcular cuánto gastaron.
 - Comparar la facturación mensual con el promedio de facturación de los meses analizados.
@@ -87,7 +87,7 @@ Incluye consultas para:
 
 - Integrar ventas con clientes, productos y categorías mediante `INNER JOIN`.
 - Buscar clientes que no tienen ventas registradas mediante `LEFT JOIN` y una comprobación de `NULL`.
-- Encontrar productos que no aparecen en las ventas.
+- Encontrar productos que no aparecen en las ventas combinando `INNER JOIN` y `LEFT JOIN` .
 - Consolidar y comparar importes de ventas de clientes de Buenos Aires y Rosario utilizando `UNION ALL` y una consulta derivada.
 
 ## Requisitos previos
